@@ -27,9 +27,9 @@ def user_input_features():
     selected_year = st.sidebar.selectbox("Araç Üretim Yılını Seçiniz", ["1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"])
     selected_Km = st.sidebar.slider("Kilometre Bilgisi Giriniz", 0,250000, 1)
     selected_fuelType = st.sidebar.selectbox("Yakıt Türünü Seçiniz", ["Diesel", "Benzin", "Hybrid", "Other"])
-    selected_yakittuketimi = st.sidebar.selectbox("Ortalama Yakıt Tüketimi", ["1.0", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "2.0", "2.1", "2.2", "2.7", "2.9", "3.0", "3.5", "4.0", "4.1", "4.3", "5.0", "5.4", "6.0", "6.2"])
+    selected_yakittuketimi = st.sidebar.selectbox("Motor Hacmi", ["1.0", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "2.0", "2.1", "2.2", "2.7", "2.9", "3.0", "3.5", "4.0", "4.1", "4.3", "5.0", "5.4", "6.0", "6.2"])
     selected_vites = st.sidebar.selectbox("Vites Türünü Seçiniz", ["Automatic", "Manual", "Semi-Auto", "Other"])
-    selected_motor = st.sidebar.slider("Motor Hacmini Seçiniz", 1.0,7.0, 0.1)
+    selected_motor = st.sidebar.slider("Ortalama Yakıt Tükrtimi", 1.0,15.0, 0.1)
 
     data = {
         'brand': selected_brand,
